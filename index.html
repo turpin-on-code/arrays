@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Arrays</title>
+</head>
+<body>
+    <div class="container">
+        <div class="innerContainer">
+            <h1>My Array</h1>
+            <ul class="array">
+
+            </ul>
+            <div>
+                <form>
+                    <div class="form-group">
+                        <label for="addToArray">Add To Array</label>
+                        <input id="valueId" type="text" />
+                    </div>
+                </form>
+                <button class="btn btn-orange" onclick="addToStart(valueId.value)">Add to start</button>
+                <button class="btn btn-orange" onclick="addToEnd(valueId.value)">Add to end</button>
+            </div>
+            <div>
+                <button  class="btn btn-gray" onclick="removeFromStart()">Delete from start</button>
+                <button class="btn btn-gray" onclick="removeFromEnd()">Delete from end</button>
+            </div>
+           
+            <button onclick="toggleSort()" class="btn toggle">Toggle sort</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
